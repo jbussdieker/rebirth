@@ -1,4 +1,6 @@
 Rebirth::Application.routes.draw do
+  resources :journals
+
   resources :categories
 
   resources :elements

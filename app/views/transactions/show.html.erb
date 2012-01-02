@@ -25,6 +25,11 @@
   <%= @transaction.refnum %>
 </p>
 
+<p>
+  <b>Journal:</b>
+  <%= @transaction.journals %>
+</p>
+
 
 <%= link_to 'Edit', edit_transaction_path(@transaction) %> |
 <%= link_to 'Back', transactions_path %>
