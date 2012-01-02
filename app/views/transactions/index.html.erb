@@ -1,0 +1,31 @@
+<h1>Listing transactions</h1>
+
+<table>
+  <tr>
+    <th>Contact</th>
+    <th>Method</th>
+    <th>Date</th>
+    <th>Memo</th>
+    <th>Refnum</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @transactions.each do |transaction| %>
+  <tr>
+    <td><%= transaction.contact.caption %></td>
+    <td><%= transaction.transaction_method.caption %></td>
+    <td><%= transaction.date %></td>
+    <td><%= transaction.memo %></td>
+    <td><%= transaction.refnum %></td>
+    <td><%= link_to 'Show', transaction %></td>
+    <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
+    <td><%= link_to 'Destroy', transaction, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Transaction', new_transaction_path %>
