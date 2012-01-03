@@ -1,0 +1,22 @@
+<script type="text/javascript">
+try
+{
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(jAppInit);
+}
+catch (err)
+{
+	alert(err);
+}
+</script>
+
+		<div style="float: right" id="eLocationStatus">&nbsp;</div>
+		<div style="clear: left" class="jMenu" id="mainmenu">
+			<div onClick="jMenuClick(this)" class="jMenuItemActive">Accounts</div>
+			<div onClick="jMenuClick(this)" class="jMenuItem">Contacts</div>
+			<div onClick="jMenuClick(this)" class="jMenuItem">Locations</div>
+			<div onClick="jMenuClick(this)" class="jMenuItem">Graphs</div>
+		</div>
+		<div class="jContent" id="content">
+		</div>
+

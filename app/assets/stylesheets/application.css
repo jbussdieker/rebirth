@@ -5,3 +5,136 @@
  *= require_self
  *= require_tree . 
 */
+body {
+	margin: 8px;
+	padding: 0;
+	background: #ccc;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.jContent {
+	clear: both;
+}
+
+#eLocationStatus {
+	font-size: 16px;
+	font-weight: bolder;
+	margin-bottom: 8px;
+
+	float:right;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+/******************************************************************************/
+/* JTABLE */
+/******************************************************************************/
+.jTable {
+	border-collapse:collapse;
+	clear: both;
+	display: table;
+	background: #bbb; /* old browsers */
+	border-radius: 10px;
+	width: 100%;
+	padding: 0px;
+
+	-webkit-box-shadow: 1px 1px 3px #666;
+	box-shadow: 1px 1px 3px #666;
+}
+
+.jTableHeader {
+	border-radius: 10px;
+	padding: 2px;
+	text-align: center;
+	font-weight: bolder;
+	-webkit-box-shadow: inset -1px -1px 2px #666;
+	box-shadow: inset -1px -1px 2px #666;
+
+	color: #fff;
+	background: #2D85BC; /* old browsers */
+	background: -moz-linear-gradient(top, #2D85BC 0%, #0061BC 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2D85BC), color-stop(100%,#0061BC)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D85BC', endColorstr='#0061BC',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #2D85BC 0%,#0061BC 100%); /* opera */
+}
+
+.jTableRow {
+	clear: both;
+}
+
+.jTableRow:nth-child(n+2) {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.jTableCell {
+	padding: 4px;
+	font-size: 14px;
+}
+
+/******************************************************************************/
+/* JMENU */
+/******************************************************************************/
+.jMenu {
+	display: table;
+	clear: both;
+	margin-bottom: 8px;
+}
+
+.jMenu > div:last-of-type {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.jMenu > div:first-of-type {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.jMenuItem, .jMenuItemActive {
+	cursor: pointer;
+	float: left;
+	font-weight: bolder;
+	padding: 4px 5px 4px 5px;
+}
+
+.jMenuItem {
+	color: #555;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #888;
+
+	background: #616161; /* old browsers */
+	background: -moz-linear-gradient(top, #999 0%, #bbb 10%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999), color-stop(10%,#bbb)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999', endColorstr='#bbb',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #999 0%,#bbb 10%); /* opera */
+}
+
+.jMenuItemActive {
+	color: #eee;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #888;
+	
+	background: #2D85BC; /* old browsers */
+	background: -moz-linear-gradient(top, #2D85BC 0%, #0061BC 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2D85BC), color-stop(100%,#0061BC)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2D85BC', endColorstr='#0061BC',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #2D85BC 0%,#0061BC 100%); /* opera */
+}
+
+/******************************************************************************/
+/* BUTTON */
+/******************************************************************************/
+.button {
+	font-size: 12px;
+	background: #ccc;
+	color: #555;
+	cursor: pointer;
+	float: left;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	margin: 2px;
+	-webkit-box-shadow: inset -1px -1px 2px #666;
+	box-shadow: inset -1px -1px 2px #666;
+}
